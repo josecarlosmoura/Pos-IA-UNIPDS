@@ -1,0 +1,104 @@
+# ===== Segredos e chaves =====
+Keys/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+
+# ===== Dependências =====
+node_modules/
+.pnp
+.pnp.js
+.yarn/
+.pnpm-store/
+bower_components/
+jspm_packages/
+
+# ===== Build / compilados (TypeScript, bundlers) =====
+dist/
+build/
+out/
+.next/
+.nuxt/
+.output/
+.svelte-kit/
+.turbo/
+.parcel-cache/
+.vite/
+.cache/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+*.map
+*.min.js
+*.min.css
+# Arquivos .js/.d.ts gerados a partir de .ts (caso compilem no mesmo diretório)
+*.d.ts
+
+# ===== Testes / cobertura =====
+coverage/
+.nyc_output/
+
+# ===== LangGraph / LangChain =====
+.langgraph_api/
+
+# ===== Logs =====
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===== Binários e executáveis =====
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+*.o
+*.obj
+*.a
+*.lib
+*.class
+*.jar
+*.war
+*.pyc
+__pycache__/
+
+# ===== Pacotes / artefatos compactados =====
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# ===== Modelos / dados pesados gerados =====
+*.onnx
+*.h5
+*.pt
+*.pth
+*.safetensors
+*.gguf
+*.ckpt
+
+# ===== Temporários / SO =====
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.temp
+*.swp
+*.bak
+
+# ===== Editores / IDEs (mantém configs compartilhadas do VS Code) =====
+.idea/
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/settings.json
+!.vscode/extensions.json

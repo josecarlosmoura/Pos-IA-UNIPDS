@@ -1,0 +1,71 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // 1) Rode `npm run dev` no terminal (usa --inspect na porta 9229)
+            // 2) Execute esta configuração para anexar o debugger
+            "type": "node",
+            "request": "attach",
+            "name": "Attach: smart-model-router-gateway",
+            "port": 9229,
+            "address": "localhost",
+            "restart": true,
+            "localRoot": "${workspaceFolder}/01-smart-model-router-gateway",
+            "remoteRoot": "${workspaceFolder}/01-smart-model-router-gateway",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            // Inicia o projeto já com o debugger (sem precisar do npm run dev)
+            "type": "node",
+            "request": "launch",
+            "name": "Launch: smart-model-router-gateway",
+            "cwd": "${workspaceFolder}/01-smart-model-router-gateway",
+            "program": "${workspaceFolder}/01-smart-model-router-gateway/src/index.ts",
+            "runtimeArgs": [
+                "--env-file",
+                ".env",
+                "--watch"
+            ],
+            "console": "integratedTerminal",
+            "restart": true,
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            // 1) Rode `npm run dev` em 02-langchain-intro (usa --inspect=9230)
+            // 2) Execute esta configuração para anexar o debugger
+            "type": "node",
+            "request": "attach",
+            "name": "Attach: 02-langchain-intro",
+            "port": 9230,
+            "address": "localhost",
+            "restart": true,
+            "localRoot": "${workspaceFolder}/02-langchain-intro",
+            "remoteRoot": "${workspaceFolder}/02-langchain-intro",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            // Inicia o projeto já com o debugger (sem precisar do npm run dev)
+            "type": "node",
+            "request": "launch",
+            "name": "Launch: 02-langchain-intro",
+            "cwd": "${workspaceFolder}/02-langchain-intro",
+            "program": "${workspaceFolder}/02-langchain-intro/src/index.ts",
+            "runtimeArgs": [
+                "--env-file",
+                ".env",
+                "--watch"
+            ],
+            "console": "integratedTerminal",
+            "restart": true,
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        }
+    ]
+}

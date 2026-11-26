@@ -1,0 +1,29 @@
+# Segredos
+.env
+.env.*
+!.env.example
+
+# Dependências
+node_modules/
+
+# Build / compilados
+dist/
+build/
+*.tsbuildinfo
+*.map
+*.d.ts
+
+# Testes / cobertura
+coverage/
+.nyc_output/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Temporários / SO
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
