@@ -1,0 +1,7 @@
+{
+    // Sugere imports de qualquer pacote em node_modules, mesmo os que
+    // não estão no package.json (ex.: @langchain/langgraph, zod)
+    "typescript.preferences.includePackageJsonAutoImports": "on",
+    "typescript.suggest.autoImports": true,
+    "typescript.preferences.importModuleSpecifierEnding": "auto"
+}
