@@ -50,6 +50,28 @@
             ]
         },
         {
+            // Sobe o servidor do LangGraph (Studio/Chat) já com o debugger.
+            // O VS Code anexa sozinho nos processos filhos (tsx / workers).
+            "type": "node",
+            "request": "launch",
+            "name": "Debug: 02-langchain-intro (langgraph:serve)",
+            "cwd": "${workspaceFolder}/02-langchain-intro",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "langgraph:serve",
+                "--",
+                "--no-browser",
+                "--no-reload"
+            ],
+            "console": "integratedTerminal",
+            "autoAttachChildProcesses": true,
+            "skipFiles": [
+                "<node_internals>/**",
+                "**/node_modules/**"
+            ]
+        },
+        {
             // Inicia o projeto já com o debugger (sem precisar do npm run dev)
             "type": "node",
             "request": "launch",

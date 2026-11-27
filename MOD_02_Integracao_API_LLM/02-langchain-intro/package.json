@@ -7,16 +7,17 @@
     "dev": "node --env-file .env --inspect=9230 --watch src/index.ts",
     "test:dev": "node --env-file .env --inspect=9230 --watch --test ./tests/**/*.test.ts",
     "test": "node --env-file .env --test ./tests/**/*.test.ts",
-    "langgraph": "npx @langchain/langgraph-cli@latest dev"
+    "langgraph:serve": "npx @langchain/langgraph-cli@latest dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "@langchain/core": "^1.1.19",
+    "@langchain/core": "^1.5.1",
+    "@langchain/langgraph": "^1.7.5",
     "@types/node": "^24.19.4",
     "fastify": "^5.7.4",
-    "langchain": "^1.2.17"
+    "langchain": "^1.6.8"
   }
 }
